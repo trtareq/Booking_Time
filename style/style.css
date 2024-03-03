@@ -67,22 +67,30 @@ nav li a {
 /* banner styles */
 .banner{
     background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
-    background-size: auto;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
     background-repeat: no-repeat;
     margin:0 auto;
     height:600px;
     max-width: 1170px;
     align-items: center;
+    justify-content: center;
 }
-
+.banner h1{
+    text-align: center;
+    margin: auto;
+}
 .banner-content {  
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .banner-button{
     display: flex;
     justify-content:space-evenly;
+    gap: 5px;
     align-items: center;
     margin-top: 50px;
     width:800px;
@@ -401,7 +409,7 @@ main {
     cursor: pointer;
     font-weight: bold;
   }
-  input[type="text"], input[type="email"] {
+  .newsletter input[type="text"], input[type="email"] {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
@@ -494,7 +502,10 @@ main {
     header {
         padding: 50px;
     }
-
+    .banner h1{
+        text-align: center;
+        margin: auto;
+    }
     nav,
     .features,
     .teams-container,
